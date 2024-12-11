@@ -36,6 +36,6 @@ provider "aws" {
 
     provider "google" {
         region = "us-east-1"
-        project = "my_google"
+        project = "google_project_id"
         credentials = file("/path.json")
     }
