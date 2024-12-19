@@ -25,17 +25,21 @@ provider "aws" {
         aws_secret_key = "<secret_key>"
     }
 
-    provider "azurerm" {
-        features {}
-        client_id = "<client_id>"
-        client_key = "<client_key>"
-        subscription_id = "<subscription_id>"
-        tennant_id = "<tennant_id>"
+provider "azurerm" {
+    features {}
+    client_id = "<client_id>"
+    client_key = "<client_key>"
+    subscription_id = "<subscription_id>"
+    tennant_id = "<tennant_id>"
 
-    }
+}
 
-    provider "google" {
-        region = "us-east-1"
-        project = "google_project_id"
-        credentials = file("/path.json")
-    }
+provider "google" {
+    region = "us-east-1"
+    project = "google_project_id"
+    credentials = file("/path.json")
+}
+
+
+
+
